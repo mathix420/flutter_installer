@@ -5,7 +5,7 @@ if [[ $(ls /tmp/flutter/bin 2&> /dev/null ) ]]; then
 		export PATH="$PATH:/tmp/flutter/bin";
 		source ~/.zshrc > /dev/null;
 		flutter doctor;
-		echo "PATH variable added!"
+		echo "\n\nFlutter added to environement!"
 		zsh;
 	else
 		echo "Flutter already installed!";
@@ -22,6 +22,6 @@ else
 	fi
 	chmod -R 777 "/tmp/flutter"
 	flutter doctor;
-	echo "Flutter installation done!";
+	echo "\n\nFlutter installation done!";
 	zsh;
 fi
