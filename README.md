@@ -5,5 +5,5 @@ Little script to install flutter on 42's Mac
 Just paste this command in your zsh terminal
 
 ```bash
-curl --silent https://raw.githubusercontent.com/mathix420/flutter_installer/master/flutter_install.sh | `echo $SHELL`
+curl --silent https://raw.githubusercontent.com/mathix420/flutter_installer/master/flutter_install.sh | zsh
 ```
