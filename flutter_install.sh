@@ -4,7 +4,7 @@ if [[ $(ls /tmp/flutter/bin 2&> /dev/null ) ]]; then
 	if [[ -z $(echo $PATH | grep /tmp/flutter/bin) ]]; then
 		export PATH="$PATH:/tmp/flutter/bin";
 		source ~/.zshrc > /dev/null;
-		flutter doctor;
+		flutter upgrade --force;
 		echo "\n\nFlutter added to environement!"
 		zsh;
 	else
